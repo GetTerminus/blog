@@ -1,0 +1,3 @@
+
+## Starting Server
+hugo server
