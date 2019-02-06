@@ -1,6 +1,4 @@
 workspace:
   base: /src
   path: github.com/GetTerminus/blog
-
  pipeline:
-
