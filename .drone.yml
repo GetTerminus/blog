@@ -3,10 +3,8 @@ workspace:
   path: github.com/GetTerminus/blog
 
 pipeline:
-  
-  steps: 
-    - name: build
-      when:
-        event:
-        - push
-        - pull_request
+  build:
+    group: build
+    image: monachus/hugo
+    commands:
+      - hugo
