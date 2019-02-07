@@ -8,3 +8,4 @@ pipeline:
     image: monachus/hugo
     commands:
       - hugo
+      - hugo server -D
