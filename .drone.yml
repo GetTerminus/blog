@@ -7,5 +7,4 @@ pipeline:
     group: build
     image: monachus/hugo
     commands:
-      - rm -rf public
       - hugo
