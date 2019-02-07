@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="fr" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.53" />
+    <meta name="description" content="Terminus Engineering blog">
+<meta name="author" content="David Harkness">
+
+    <link rel="shortcut icon" href="/en/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/en/images/favicon.png" type="image/x-icon" />
+    <title>Multi-langue et i18n :: Documentation du thème Hugo Learn</title>
+
+    
+    <link href="/en/css/nucleus.css?1549567349" rel="stylesheet">
+    <link href="/en/css/fontawesome-all.min.css?1549567349" rel="stylesheet">
+    <link href="/en/css/hybrid.css?1549567349" rel="stylesheet">
+    <link href="/en/css/featherlight.min.css?1549567349" rel="stylesheet">
+    <link href="/en/css/perfect-scrollbar.min.css?1549567349" rel="stylesheet">
+    <link href="/en/css/auto-complete.css?1549567349" rel="stylesheet">
+    <link href="/en/css/theme.css?1549567349" rel="stylesheet">
+    <link href="/en/css/hugo-theme.css?1549567349" rel="stylesheet">
+    
+      <link href="/en/css/theme-green.css?1549567349" rel="stylesheet">
+    
+
+    <script src="/en/js/jquery-2.x.min.js?1549567349"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/en/fr/cont/i18n/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/">
+	<svg  xmlns="http://www.w3.org/2000/svg" height="50.376" width="205.893" id="Layer_1" viewBox="0 0 605.89272 136.37649"><style id="style3337">.st0{fill:#747474}.st1{fill:#28538b}</style><g id="g4339" transform="translate(301.147 396.513)"><path id="path4341" class="st0" d="M-101.7-338.5h-64v12h25.8v65.9h12.4v-65.9h25.8v-12z" fill="#747474"/></g><g transform="translate(-33.352 -19.08)" id="g4349"><g id="g4351" transform="translate(353.568 393.422)"><path id="path4353" class="st0" d="M-96.9-288.6c-.6 0-1.2 0-1.8.1-1.3.1-2.7.4-4.1.9-8 2.6-12.6 9.2-12.2 17.8v.7l32.9-10.6-.4-.6c-3.4-5.4-8.6-8.3-14.4-8.3m.2 50c-12.8 0-23.4-8.1-27.7-21.3-2.6-8.2-2.3-16.5 1-23.3 3.3-6.8 9.5-11.9 17.4-14.5 2.2-.7 4.5-1.2 6.7-1.4 1-.1 2-.2 3-.2 12.6 0 23 8.2 27.3 21.4l1.5 4.6-44.3 14.3.4.6c3.5 5.8 9.1 9.1 15.5 9.1.6 0 1.3 0 1.9-.1 1.4-.1 2.8-.4 4.1-.9 8.1-2.6 10.8-8.4 11.6-12.8l.2-.8 11.5-3.7-.1 2.1c-.7 12.4-7.8 21.3-20 25.3-2.2.7-4.5 1.2-6.7 1.4-1.2.2-2.3.2-3.3.2" fill="#747474"/></g><g id="g4355" transform="translate(384.329 353.674)"><path id="path4357" class="st0" d="M-89.2-199.2v-58.7H-78v9l1-1.3c3.1-3.9 8.8-8.6 18.1-8.6h2v11.2h-2.4c-12.1 0-18.7 11.5-18.7 22.4v26h-11.2z" fill="#747474"/></g><g id="g4359" transform="translate(477.129 353.674)"><path id="path4361" class="st0" d="M-66-199.2v-35c0-8.4-5.1-14.2-12.4-14.2-6.8 0-13.7 4.4-13.7 14.3v34.8h-11.2v-35c0-8.4-5.1-14.2-12.4-14.2-6.8 0-13.7 4.4-13.7 14.3v34.8h-11.2v-58.7h11.2v5.5l.9-.9c2.7-2.5 7.4-5.5 14.6-5.5 6.9 0 13.4 3.5 17.4 9.3l.4.6.5-.6c2.7-3.5 8.7-9.3 18.7-9.3 10.7 0 22.1 8.6 22.1 24.5v35.2H-66z" fill="#747474"/></g><path id="path4363" class="st0" d="M436.3 95.8h11.2v58.7h-11.2V95.8z" fill="#747474"/><path id="path4365" class="st0" d="M435.9 75.4h11.9v13.8h-11.9V75.4z" fill="#747474"/><g id="g4367" transform="translate(550.521 353.674)"><path id="path4369" class="st0" d="M-47.7-199.2v-33.7c0-9.2-5.7-15.4-14.2-15.4-8.8 0-15.4 6.7-15.4 15.6v33.6h-11.2v-58.7h11.2v6.2l.9-.9c4.5-4.2 9.7-6.2 16.2-6.2 11.5 0 23.8 8 23.8 25.7v34h-11.3z" fill="#747474"/></g><g id="g4371" transform="translate(588.766 352.957)"><path id="path4373" class="st0" d="M-38.1-197.5c-11.5 0-23.8-8-23.8-25.7v-34h11.2v33.7c0 9.2 5.7 15.4 14.2 15.4 8.8 0 15.4-6.7 15.4-15.6v-33.6h11.2v58.7H-21v-6.2l-.9.9c-4.5 4.3-9.8 6.4-16.2 6.4" fill="#747474"/></g><g id="g4375" transform="translate(640.438 352.957)"><path id="path4377" class="st0" d="M-25.2-197.5c-17 0-25.1-9.9-25.7-19.8l-.1-1.5h11.5l.1 1.3c.3 3 2.3 10 14.2 10 2.1 0 12.9-.4 12.9-7.4 0-4.8-5.6-6.4-14.8-8.4-10-2.2-22.4-4.9-22.4-17.3 0-11.1 8.5-17.4 23.3-17.4 13.3 0 22 6.4 23.3 17.1l.2 1.6h-11.4l-.2-1.2c-.7-5-4.8-7.5-12.2-7.5-11.9 0-11.9 5-11.9 6.6 0 4.5 5.4 6 14.4 7.9 10.2 2.2 22.8 5 22.8 17.8.3 11.4-8.8 18.2-24 18.2" fill="#747474"/></g></g><g id="g4379" transform="translate(193.812 391.026)"><path id="path4381" class="st0" d="M-116.3-325.5v70.5h28.5v-79.3l-28.5 8.8z" fill="#747474"/></g><g id="g4383" transform="translate(131.915 370.873)"><path id="path4385" class="st0" d="M-131.8-280.2v45.3h28.5v-54.3l-28.5 9z" fill="#747474"/></g><g id="g4387" transform="translate(210.9 441.4)"><path id="path4389" class="st1" d="M-106-441.4l2.6 12.4-107.5 54.9v15.5l34.1-11.1 3.1-1v65.4h31.8v-76.1l44.4-14.6 1.8 10.1 46.3-45-56.6-10.5z" fill="#28538b"/></g></svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Rechercher...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/en/js/lunr.min.js?1549567349"></script>
+<script type="text/javascript" src="/en/js/auto-complete.js?1549567349"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/getterminus.github.io\/en\/\/fr";
+    
+</script>
+<script type="text/javascript" src="/en/js/search.js?1549567349"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/basics/" title="Démarrage" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/basics/">
+          <b>1. </b>Démarrage
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/basics/requirements/" title="Prérequis" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/basics/requirements/">
+          Prérequis
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/basics/installation/" title="Installation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/basics/installation/">
+          Installation
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/basics/configuration/" title="Configuration" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/basics/configuration/">
+          Configuration
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/basics/style-customization/" title="Personnalisation du style" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/basics/style-customization/">
+          Personnalisation du style
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/cont/" title="Contenu" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/en/fr/cont/">
+          <b>2. </b>Contenu
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/cont/pages/" title="Organisation des pages" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/cont/pages/">
+          Organisation des pages
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/fr/cont/archetypes/" title="Archétypes" class="dd-item ">
+        <a href="/en/fr/cont/archetypes/">
+        Archétypes
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/fr/cont/markdown/" title="Syntaxe Markdown" class="dd-item ">
+        <a href="/en/fr/cont/markdown/">
+        Syntaxe Markdown
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/fr/cont/menushortcuts/" title="Raccourcis du menu" class="dd-item ">
+        <a href="/en/fr/cont/menushortcuts/">
+        Raccourcis du menu
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/cont/i18n/" title="Multi-langue et i18n" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/en/fr/cont/i18n/">
+          Multi-langue et i18n
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/shortcodes/" title="Shortcodes" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/shortcodes/">
+          <b>3. </b>Shortcodes
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/fr/shortcodes/attachments/" title="Attachments (Pièces jointes)" class="dd-item ">
+        <a href="/en/fr/shortcodes/attachments/">
+        Attachments (Pièces jointes)
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/fr/shortcodes/button/" title="Button (Bouton)" class="dd-item ">
+        <a href="/en/fr/shortcodes/button/">
+        Button (Bouton)
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/shortcodes/children/" title="Children (Pages filles)" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/shortcodes/children/">
+          Children (Pages filles)
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/shortcodes/children/children-1/" title="page 1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/shortcodes/children/children-1/">
+          page 1
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/shortcodes/children/children-1/children-1-1/" title="page 1-1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/shortcodes/children/children-1/children-1-1/">
+          page 1-1
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/" title="page 1-1-1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/">
+          page 1-1-1
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/" title="page 1-1-1-1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/">
+          page 1-1-1-1
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/" title="page 1-1-1-1-1" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/">
+          page 1-1-1-1-1
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/shortcodes/children/children-2/" title="page 2" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/shortcodes/children/children-2/">
+          page 2
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/fr/shortcodes/children/children-2/test3/" title="page test 3" class="dd-item ">
+        <a href="/en/fr/shortcodes/children/children-2/test3/">
+        page test 3
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/en/fr/shortcodes/children/children-3/" title="page 3" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/fr/shortcodes/children/children-3/">
+          page 3
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+             
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/fr/shortcodes/children/test/" title="page test" class="dd-item ">
+        <a href="/en/fr/shortcodes/children/test/">
+        page test
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/fr/shortcodes/expand/" title="Expand" class="dd-item ">
+        <a href="/en/fr/shortcodes/expand/">
+        Expand
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/fr/shortcodes/mermaid/" title="Mermaid" class="dd-item ">
+        <a href="/en/fr/shortcodes/mermaid/">
+        Mermaid
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/fr/shortcodes/notice/" title="Notice" class="dd-item ">
+        <a href="/en/fr/shortcodes/notice/">
+        Notice
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/fr/shortcodes/siteparam/" title="Site param" class="dd-item ">
+        <a href="/en/fr/shortcodes/siteparam/">
+        Site param
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>Aller plus loin</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/matcornic/hugo-theme-learn"><i class='fab fa-fw fa-github'></i> Repo Github</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://getterminus.github.io/fr/en/showcase"><i class='fas fa-fw fa-camera'></i> Vitrine</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://gohugo.io/"><i class='fas fa-fw fa-bookmark'></i> Documentation Hugo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://getterminus.github.io/fr/en/credits"><i class='fas fa-fw fa-bullhorn'></i> Crédits</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="/en/en/cont/i18n/">English</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="fr" value="/en/fr/cont/i18n/" selected>Français</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Supprimer l&#39;historique</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download matcornic/hugo-theme-learn on GitHub">Download</a>
+
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn" data-icon="octicon-star" data-show-count="true" aria-label="Star matcornic/hugo-theme-learn on GitHub">Star</a>
+
+    
+    <a class="github-button" href="https://github.com/matcornic/hugo-theme-learn/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork matcornic/hugo-theme-learn on GitHub">Fork</a>
+
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Modifier la page' href="https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/cont/i18n/_index.fr.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Modifier la page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/fr/'>Learn Theme for Hugo</a> > <a href='/en/fr/cont/'>Contenu</a> > Multi-langue et i18n
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#configuration-simple">Configuration simple</a></li>
+<li><a href="#surcharger-les-translation-strings">Surcharger les <em>translation strings</em></a></li>
+<li><a href="#désactiver-le-changement-de-langue">Désactiver le changement de langue</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Multi-langue et i18n</h1>
+          
+
+        
+
+
+
+
+<p><strong>Learn</strong> est complètement compatible avec le mode multi-langue d&rsquo;Hugo.</p>
+
+<p>Il fournit :</p>
+
+<ul>
+<li>Des <em>translation strings</em> pour les valeurs par défaut utilisées par le thème (Anglais et Français). N&rsquo;hésitez pas à contribuer !</li>
+<li>Génération automatique du menu avec le contenu multi-langue</li>
+<li>Modification de la langue dans le navigateur</li>
+</ul>
+
+<p><img src="/cont/i18n/images/i18n-menu.gif" alt="I18n menu" /></p>
+
+<h2 id="configuration-simple">Configuration simple</h2>
+
+<p>Après avoir appris <a href="https://gohugo.io/content-management/multilingual">comment Hugo gère les sites multi-langue</a>, définissez vos langues dans votre fichier <code>config.toml</code>.</p>
+
+<p>Par exemple, pour ce site, avec du contenu en français et en anglais.</p>
+
+<pre><code class="language-toml"># Anglais est la langue par défaut
+defaultContentLanguage = &quot;en&quot;
+# Force d'avoir /en/ma-page et /fr/ma-page routes, même avec la langue par défaut.
+defaultContentLanguageInSubdir= true
+
+[Languages]
+[Languages.en]
+title = &quot;Documentation for Hugo Learn Theme&quot;
+weight = 1
+languageName = &quot;English&quot;
+
+[Languages.fr]
+title = &quot;Documentation du thème Hugo Learn&quot;
+weight = 2
+languageName = &quot;Français&quot;
+</code></pre>
+
+<p>Puis, pour chaque nouvelle page, ajoutez <em>l&rsquo;id</em> de la langue du fichier.</p>
+
+<ul>
+<li>Le fichier <code>my-page.md</code> est découpé en deux fichiers :
+
+<ul>
+<li>en anglais : <code>my-page.en.md</code></li>
+<li>en français : <code>my-page.fr.md</code></li>
+</ul></li>
+<li>Le fichier <code>_index.md</code> est découpé en deux fichiers :
+
+<ul>
+<li>en anglais: <code>_index.en.md</code></li>
+<li>en français: <code>_index.fr.md</code></li>
+</ul></li>
+</ul>
+
+<div class="notices info" ><p>Attention, seulement les pages traduites sont affichées dans le menu. Le contenu n&rsquo;est pas remplacé par les pages de la langue par défaut.</p>
+</div>
+
+
+<div class="notices tip" ><p>Utilisez le paramètre du Front Matter <a href="https://gohugo.io/content-management/multilingual/#translate-your-content">slug</a> pour traduire également les URLs.</p>
+</div>
+
+
+<h2 id="surcharger-les-translation-strings">Surcharger les <em>translation strings</em></h2>
+
+<p>Les <em>Translations strings</em> sont utilisées comme valeurs par défaut dans le thème (Bouton <em>Modifier la page</em>, Element de subsitution <em>Recherche</em>, etc.). Les traductions sont disponibles en français et en anglais mais vous pouvez utiliser n&rsquo;importe quelle autre langue et surcharger avec vos propres valeurs.</p>
+
+<p>Pour surcharger ces valeurs, créer un nouveau fichier dans votre dossier i18n local <code>i18n/&lt;idlanguage&gt;.toml</code> et inspirez vous du thème <code>themes/hugo-theme-learn/i18n/en.toml</code></p>
+
+<p>D&rsquo;ailleurs, ces traductions pour servir à tout le monde, donc svp prenez le temps de <a href="https://github.com/matcornic/hugo-theme-learn/pulls">proposer une Pull Request</a> !</p>
+
+<h2 id="désactiver-le-changement-de-langue">Désactiver le changement de langue</h2>
+
+<p>Vous pouvez changer de langue directement dans le navigateur. C&rsquo;est une super fonctionnalité, mais vous avez peut-être besoin de la désactiver.</p>
+
+<p>Pour ce faire, ajouter le paramètre <code>disableLanguageSwitchingButton=true</code> dans votre <code>config.toml</code></p>
+
+<pre><code class="language-toml">[params]
+  # Quand vous utilisez un site en multi-langue, désactive le bouton de changment de langue.
+  disableLanguageSwitchingButton = true
+</code></pre>
+
+<p><img src="/cont/i18n/images/i18n-menu.gif" alt="I18n menu" /></p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/en/fr/cont/menushortcuts/" title="Raccourcis du menu"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/en/fr/shortcodes/" title="Shortcodes" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/en/js/clipboard.min.js?1549567349"></script>
+    <script src="/en/js/perfect-scrollbar.min.js?1549567349"></script>
+    <script src="/en/js/perfect-scrollbar.jquery.min.js?1549567349"></script>
+    <script src="/en/js/jquery.sticky.js?1549567349"></script>
+    <script src="/en/js/featherlight.min.js?1549567349"></script>
+    <script src="/en/js/html5shiv-printshiv.min.js?1549567349"></script>
+    <script src="/en/js/highlight.pack.js?1549567349"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/en/js/modernizr.custom.71422.js?1549567349"></script>
+    <script src="/en/js/learn.js?1549567349"></script>
+    <script src="/en/js/hugo-learn.js?1549567349"></script>
+
+    <link href="/en/mermaid/mermaid.css?1549567349" type="text/css" rel="stylesheet" />
+    <script src="/en/mermaid/mermaid.js?1549567349"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+  
+  
+  
+  
+
+  
+  
+
+
+  </body>
+</html>
