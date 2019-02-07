@@ -1,0 +1,11 @@
+workspace:
+  base: /src
+  path: github.com/GetTerminus/blog
+
+pipeline:
+  build:
+    group: build
+    image: monachus/hugo
+    commands:
+      - rm -rf public
+      - hugo
