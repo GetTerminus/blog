@@ -1,4 +1,12 @@
 workspace:
   base: /src
   path: github.com/GetTerminus/blog
- pipeline:
+
+pipeline:
+  
+  steps: 
+    - name: build
+      when:
+        event:
+        - push
+        - pull_request
