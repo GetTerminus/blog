@@ -3,14 +3,6 @@ workspace:
   path: github.com/GetTerminus/blog
 
 pipeline:
-  # build:
-  #   group: build
-  #   image: monachus/hugo
-  #   commands:
-  #     - hugo
-  #   when: 
-  #     event:
-  #       - push
   commit-check:
     image: monachus/hugo
     environment:
