@@ -12,6 +12,7 @@ pipeline:
   #     event:
   #       - push
   commit-check:
+    image: monachus/hugo
     environment:
       - master
     commands:
