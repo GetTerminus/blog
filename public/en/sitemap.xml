@@ -3,493 +3,493 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://getterminus.github.io/en/en/cont/pages/</loc>
+    <loc>/en/cont/pages/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/cont/pages/"
+                href="/fr/cont/pages/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/cont/pages/"
+                href="/en/cont/pages/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/basics/</loc>
+    <loc>/en/basics/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/basics/"
+                href="/fr/basics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/basics/"
+                href="/en/basics/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/cont/archetypes/</loc>
+    <loc>/en/cont/archetypes/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/cont/archetypes/"
+                href="/fr/cont/archetypes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/cont/archetypes/"
+                href="/en/cont/archetypes/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/cont/</loc>
+    <loc>/en/cont/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/cont/"
+                href="/fr/cont/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/cont/"
+                href="/en/cont/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/basics/requirements/</loc>
+    <loc>/en/basics/requirements/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/basics/requirements/"
+                href="/fr/basics/requirements/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/basics/requirements/"
+                href="/en/basics/requirements/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/cont/markdown/</loc>
+    <loc>/en/cont/markdown/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/cont/markdown/"
+                href="/fr/cont/markdown/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/cont/markdown/"
+                href="/en/cont/markdown/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/</loc>
+    <loc>/en/shortcodes/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/"
+                href="/fr/shortcodes/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/"
+                href="/en/shortcodes/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/basics/installation/</loc>
+    <loc>/en/basics/installation/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/basics/installation/"
+                href="/fr/basics/installation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/basics/installation/"
+                href="/en/basics/installation/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/basics/configuration/</loc>
+    <loc>/en/basics/configuration/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/basics/configuration/"
+                href="/fr/basics/configuration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/basics/configuration/"
+                href="/en/basics/configuration/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/cont/menushortcuts/</loc>
+    <loc>/en/cont/menushortcuts/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/cont/menushortcuts/"
+                href="/fr/cont/menushortcuts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/cont/menushortcuts/"
+                href="/en/cont/menushortcuts/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/basics/style-customization/</loc>
+    <loc>/en/basics/style-customization/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/basics/style-customization/"
+                href="/fr/basics/style-customization/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/basics/style-customization/"
+                href="/en/basics/style-customization/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/cont/icons/</loc>
+    <loc>/en/cont/icons/</loc>
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/cont/i18n/</loc>
+    <loc>/en/cont/i18n/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/cont/i18n/"
+                href="/fr/cont/i18n/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/cont/i18n/"
+                href="/en/cont/i18n/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/attachments/</loc>
+    <loc>/en/shortcodes/attachments/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/attachments/"
+                href="/fr/shortcodes/attachments/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/attachments/"
+                href="/en/shortcodes/attachments/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/button/</loc>
+    <loc>/en/shortcodes/button/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/button/"
+                href="/fr/shortcodes/button/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/button/"
+                href="/en/shortcodes/button/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/categories/</loc>
+    <loc>/en/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/categories/"
+                href="/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/categories/"
+                href="/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/children/</loc>
+    <loc>/en/shortcodes/children/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/children/"
+                href="/fr/shortcodes/children/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/children/"
+                href="/en/shortcodes/children/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/credits/</loc>
+    <loc>/en/credits/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/credits/"
+                href="/fr/credits/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/credits/"
+                href="/en/credits/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/expand/</loc>
+    <loc>/en/shortcodes/expand/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/expand/"
+                href="/fr/shortcodes/expand/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/expand/"
+                href="/en/shortcodes/expand/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/</loc>
+    <loc>/en/</loc>
     <lastmod>2016-04-09T16:50:16+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/"
+                href="/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/"
+                href="/en/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/mermaid/</loc>
+    <loc>/en/shortcodes/mermaid/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/mermaid/"
+                href="/fr/shortcodes/mermaid/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/mermaid/"
+                href="/en/shortcodes/mermaid/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/notice/</loc>
+    <loc>/en/shortcodes/notice/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/notice/"
+                href="/fr/shortcodes/notice/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/notice/"
+                href="/en/shortcodes/notice/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/showcase/</loc>
+    <loc>/en/showcase/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/vitrine/"
+                href="/fr/vitrine/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/showcase/"
+                href="/en/showcase/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/siteparam/</loc>
+    <loc>/en/shortcodes/siteparam/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/siteparam/"
+                href="/fr/shortcodes/siteparam/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/siteparam/"
+                href="/en/shortcodes/siteparam/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/tags/</loc>
+    <loc>/en/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/tags/"
+                href="/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/tags/"
+                href="/en/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/children/children-1/</loc>
+    <loc>/en/shortcodes/children/children-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/children/children-1/"
+                href="/fr/shortcodes/children/children-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/children/children-1/"
+                href="/en/shortcodes/children/children-1/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/children/children-1/children-1-1/</loc>
+    <loc>/en/shortcodes/children/children-1/children-1-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/children/children-1/children-1-1/"
+                href="/fr/shortcodes/children/children-1/children-1-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/children/children-1/children-1-1/"
+                href="/en/shortcodes/children/children-1/children-1-1/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
+    <loc>/en/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/"
+                href="/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/children/children-1/children-1-1/children-1-1-1/"
+                href="/en/shortcodes/children/children-1/children-1-1/children-1-1-1/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
+    <loc>/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/"
+                href="/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/"
+                href="/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
+    <loc>/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/"
+                href="/fr/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/"
+                href="/en/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/children/children-2/</loc>
+    <loc>/en/shortcodes/children/children-2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/children/children-2/"
+                href="/fr/shortcodes/children/children-2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/children/children-2/"
+                href="/en/shortcodes/children/children-2/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/children/children-3/</loc>
+    <loc>/en/shortcodes/children/children-3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/children/children-3/"
+                href="/fr/shortcodes/children/children-3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/children/children-3/"
+                href="/en/shortcodes/children/children-3/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/children/children-4/</loc>
+    <loc>/en/shortcodes/children/children-4/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/children/children-4/"
+                href="/fr/shortcodes/children/children-4/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/children/children-4/"
+                href="/en/shortcodes/children/children-4/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/children/test/</loc>
+    <loc>/en/shortcodes/children/test/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/children/test/"
+                href="/fr/shortcodes/children/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/children/test/"
+                href="/en/shortcodes/children/test/"
                 />
   </url>
   
   <url>
-    <loc>https://getterminus.github.io/en/en/shortcodes/children/children-2/test3/</loc>
+    <loc>/en/shortcodes/children/children-2/test3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://getterminus.github.io/en/fr/shortcodes/children/children-2/test3/"
+                href="/fr/shortcodes/children/children-2/test3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://getterminus.github.io/en/en/shortcodes/children/children-2/test3/"
+                href="/en/shortcodes/children/children-2/test3/"
                 />
   </url>
   
