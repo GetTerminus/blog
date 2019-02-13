@@ -11,4 +11,3 @@ pipeline:
       - hugo
     when:
       branch: master
-
