@@ -8,6 +8,6 @@ pipeline:
     environment:
       - master
     commands:
-      - hugo
+      - bash publish_to_ghpages.sh
     when:
       branch: master
