@@ -11,6 +11,8 @@ pipeline:
       - uname -a
       - git config --global user.email "chue.her@terminus.com"
       - git config --global user.name "chueher"
+      - hugo
+      - pwd && ls
       - rm -rf public && mkdir public
       - git worktree prune
       - rm -rf .git/worktrees/public/
