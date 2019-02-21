@@ -3,7 +3,7 @@ languageCode = "en-US"
 defaultContentLanguage = "en"
 
 title = "Terminus Engineering Blog"
-theme = "hugo-theme-learn"
+theme = "hugo-theme-learn-master"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
