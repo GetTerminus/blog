@@ -11,10 +11,10 @@ pipeline:
       - uname -a
       - git config --global user.email "chue.her@terminus.com"
       - git config --global user.name "chueher"
-      - git pull origin master
       - git checkout --orphan gh-pages
       - git reset --hard
       - git commit --allow-empty -m "Init gh-pages branch"
+      - git fetch
       - git push origin gh-pages
       - git checkout master
       - rm -rf public && mkdir public
