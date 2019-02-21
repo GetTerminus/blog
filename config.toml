@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://github.com/GetTerminus/blog"
 languageCode = "en-us"
 title = "Terminus Engineering Blog"
 theme = "hugo-theme-learn-master"
