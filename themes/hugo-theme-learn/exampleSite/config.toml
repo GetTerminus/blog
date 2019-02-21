@@ -1,10 +1,9 @@
-baseURL = "/"
+baseURL = "https://getterminus.github.io/blog/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
 title = "Hugo Learn Documentation"
 theme = "hugo-theme-learn"
-themesdir = "../.."
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
