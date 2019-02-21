@@ -9,10 +9,15 @@ pipeline:
       - master
     commands:
       - uname -a
+      - git checkout --orphan gh-pages
+      - git reset --hard
+      - git commit --allow-empty -m "Init gh-pages branch"
+      - git push origin gh-pages
+      - git checkout master
       - rm -rf public && mkdir public
       - git worktree prune
       - rm -rf .git/worktrees/public/
-      - git worktree add -B gh-pages public upstream/gh-pages
+      - git worktree add -B gh-pages public origin/gh-pages
       - rm -rf public/*
       - hugo
       - cd public && git add --all && git commit -m "Publishing to gh-pages" && cd .. && git push upstream gh-pages
