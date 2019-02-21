@@ -9,6 +9,8 @@ pipeline:
       - master
     commands:
       - uname -a
+      - git config --global user.email "chue.her@terminus.com"
+      - git config --global user.name "chueher"
       - git checkout --orphan gh-pages
       - git reset --hard
       - git commit --allow-empty -m "Init gh-pages branch"
