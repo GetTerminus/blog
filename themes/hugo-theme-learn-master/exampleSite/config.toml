@@ -1,20 +1,20 @@
-baseURL = "https://getterminus.github.io/blog"
+baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Terminus Engineering Blog"
+title = "Hugo Learn Documentation"
 theme = "hugo-theme-learn"
+themesdir = "../.."
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
   editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
-  description = "Terminus Engineering blog"
-  author = "David Harkness"
+  description = "Documentation for Hugo Learn Theme"
+  author = "Mathieu Cornic"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
-  themeVariant = "green"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
