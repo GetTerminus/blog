@@ -20,6 +20,9 @@ git worktree prune
 rm -rf .git/worktrees/public/
 
 echo "Checking out gh-pages branch into public"
+git remote add origin https://github.com/GetTerminus/blog.git
+git pull origin master
+git branch -r
 git worktree add -B gh-pages public origin/gh-pages
 
 echo "Removing existing files"
