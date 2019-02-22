@@ -1,6 +1,7 @@
 #!/bin/bash
 
 DIR=$(dirname "$0")
+echo "I'm in directory $DIR"
 
 cd $DIR/..
 
