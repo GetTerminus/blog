@@ -14,7 +14,7 @@ pipeline:
       - git config --global user.name "chueher"
       - rm -rf public && mkdir public
       - git worktree prune
-      - git checkout --orpah gh-pages
+      - git checkout --orphan gh-pages
       - git reset --hard
       - git checkout master
       - git worktree add -B gh-pages public origin/gh-pages
