@@ -4,7 +4,8 @@
 
 #cd $DIR/..
 
-echo "I am in directory $(dirname $0)"
+git config --global user.email "chue.her@terminus.com"
+git config --global user.name "chueher"
 
 if [[ $(git status -s) ]]
 then
