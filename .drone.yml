@@ -10,6 +10,13 @@ pipeline:
   publish-gh-pages:
     image: monachus/hugo
     commands: 
+      - git config --global user.email "chue.her@terminus.com"
+      - git config --global user.name "chueher"
+      - git checkout --oprhan gh-pages
+      - git reset --hard
+      - git commit --allow-empty -m "Init gh-pages branch"
+      - git push origin gh-pages
+      - git checkout master
       - rm -rf public && mkdir public
       - git worktree prune
       - git worktree add -B gh-pages public origin/gh-pages
