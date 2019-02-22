@@ -13,10 +13,12 @@ pipeline:
       - git config --global user.email "chue.her@terminus.com"
       - git config --global user.name "chueher"
       - git checkout --orphan gh-pages
-      - git push origin gh-pages 
+      - git status
       - git pull origin gh-pages
+      - git status
       - git reset --hard
       - git commit --allow-empty -m "Init gh-pages branch"
+      - git status
       - git push -u origin gh-pages
       - git checkout master
       - rm -rf public && mkdir public
