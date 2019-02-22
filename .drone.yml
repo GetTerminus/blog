@@ -9,8 +9,6 @@ pipeline:
       - master
     commands:
       - hugo
-  when:
-    event: push
 
   publish-gh-pages:
     image: monachus/hugo
