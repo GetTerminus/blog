@@ -12,15 +12,11 @@ pipeline:
     commands: 
       - git config --global user.email "chue.her@terminus.com"
       - git config --global user.name "chueher"
-      - git checkout --orphan gh-pages
-      - git reset --hard
-      - git add .
-      - git status
-      - git commit --allow-empty -m "Init gh-pages branch"
-      - git push -u origin gh-pages
-      - git checkout master
       - rm -rf public && mkdir public
       - git worktree prune
+      - git checkout --orpah gh-pages
+      - git reset --hard
+      - git checkout master
       - git worktree add -B gh-pages public origin/gh-pages
       - rm -rf public/*
       - hugo
