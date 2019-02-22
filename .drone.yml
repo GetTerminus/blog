@@ -9,12 +9,15 @@ pipeline:
       - master
     commands:
       - hugo
+  when:
+    event: push
+
   publish-gh-pages:
     image: monachus/hugo
     commands:
       - git config --global user.email "chue.her@terminus.com"
       - git config --global user.name "chueher"
-      - git pull
+      - git pull origin master
       - rm -rf public && mkdir public
       - git worktree prune
       - git worktree add -B gh-pages public origin/gh-pages
