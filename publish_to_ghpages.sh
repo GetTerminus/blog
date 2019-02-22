@@ -1,9 +1,10 @@
 #!/bin/bash
 
-DIR=$(dirname "$0")
-echo "I'm in directory $DIR"
+#DIR=$(dirname "$0")
 
-cd $DIR/..
+#cd $DIR/..
+
+echo "I am in directory $(dirname $0)"
 
 if [[ $(git status -s) ]]
 then
