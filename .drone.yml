@@ -3,10 +3,6 @@ workspace:
   path: github.com/GetTerminus/blog
 
 pipeline:
-  commit-check:
-    image: monachus/hugo
-    commands:
-      - hugo
   publish-gh-pages:
     image: monachus/hugo
     commands:
