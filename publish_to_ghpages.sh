@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#DIR=$(dirname "$0")
-
-#cd $DIR/..
-
 git config --global user.email "chue.her@terminus.com"
 git config --global user.name "chueher"
 
