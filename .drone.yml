@@ -12,5 +12,4 @@ pipeline:
     commands:
       - bash publish_to_ghpages.sh 
     when:
-      event: push
       branch: master
