@@ -1,4 +1,4 @@
-baseURL = "https://blog.terminus.ninja/en/"
+baseURL = "https://blog.terminus.ninja"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
