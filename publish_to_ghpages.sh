@@ -24,8 +24,11 @@ rm -rf public/*
 echo "Generating site"
 hugo
 
+echo "Create CNAME"
+cd public && touch CNAME && echo 'blog.terminus.ninja' >> CNAME
+
 echo "Updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)" && cd..
+git add --all && git commit -m "Publishing to gh-pages (publish.sh)" && cd..
 
 echo "Pushing commit"
 git push origin gh-pages --force
