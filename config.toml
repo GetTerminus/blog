@@ -1,75 +1,65 @@
-baseURL = "https://blog.terminus.ninja"
-languageCode = "en-US"
-defaultContentLanguage = "en"
+baseurl = "https://www.example.com"
+languageCode = "en"
+title = "Terminus"
+theme = "kiss-master"
+copyright = "&copy; <a href=\"https://github.com/ribice\">Emir Ribic</a> 2017"
+disqusShortname = "shortname"
+googleAnalytics = ""
+# Number of posts per page
+Paginate = 5
+enableRobotsTXT = true
 
-title = "Terminus Engineering Blog"
-theme = "hugo-theme-learn-master"
-metaDataFormat = "yaml"
-defaultContentLanguageInSubdir= true
+[params.features]
+disqusOnDemand = true  # Load Disqus comments on click
 
-[params]
-  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
-  description = "Terminus Engineering blog"
-  author = "David Harkness"
-  showVisitedLinks = true
-  disableBreadcrumb = false
-  disableNextPrev = false
-  themeVariant = "green"
+[params.assets]
+customCSS = ["css/custom.css"]
 
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
+[params.rss]
 
-[Languages]
-[Languages.en]
-title = "Documentation for Hugo Learn Theme"
-weight = 1
-languageName = "English"
+includeContent = true # Includes whole content in rss
+authorName = "Emir Ribic" # Site author's full name
+authorEmail = "ribice@gmail.com"
 
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> Github repo"
-identifier = "ds"
-url = "https://github.com/matcornic/hugo-theme-learn"
-weight = 10
+[params.info]
+adsense = "" # Adsense ID (ID only, without ca-pub-)
+enableSocial = false # Adds OpenGraph and Twitter cards
+homeTitle = "" # Title for home page
+poweredby = true # Adds powered by Hugo and Kiss below Copyright section
+related = true # Includes related articles
 
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-camera'></i> Showcases"
-url = "showcase"
-weight = 11
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
 
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20
+[params.opengraph.twitter]
+page = "" # Twitter Page username. If not set, params.social.twitter will be used.
 
-[[Languages.en.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
-url = "/credits"
-weight = 30
+[params.social]
 
-[Languages.fr]
-title = "Documentation du thème Hugo Learn"
-weight = 2
-languageName = "Français"
+twitter = "ribicemir"
+github = "ribice"
+email = "ribice@gmail.com"
+linkedin = "ribice"
+gitlab = "ribice"
+instagram = ""
+codepen = ""
+facebook = ""
 
-[[Languages.fr.menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> Repo Github"
-identifier = "ds"
-url = "https://github.com/matcornic/hugo-theme-learn"
-weight = 10
+[params.social.config]
+platforms = ["twitter","github","email","linkedin","gitlab"]
 
-[[Languages.fr.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-camera'></i> Vitrine"
-url = "/showcase"
-weight = 11
+[params.matomoAnalytics]
+siteID = 1
+rootURL = "//matomo.example.com/"
 
-[[Languages.fr.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bookmark'></i> Documentation Hugo"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20
+[params.fathomAnalytics]
+rootURL = "//fathom.example.com/"
 
-[[Languages.fr.menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bullhorn'></i> Crédits"
-url = "/credits"
-weight = 30
+[taxonomies]
+tag ="tags"
+
+[blackfriday]
+hrefTargetBlank = true
+
