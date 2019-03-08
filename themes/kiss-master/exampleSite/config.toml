@@ -1,7 +1,7 @@
 baseurl = "https://www.example.com"
 languageCode = "en"
-title = "Terminus"
-theme = "kiss-master"
+title = "Hugo Kiss theme"
+theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/ribice\">Emir Ribic</a> 2017"
 disqusShortname = "shortname"
 googleAnalytics = ""
@@ -48,7 +48,7 @@ codepen = ""
 facebook = ""
 
 [params.social.config]
-platforms = ["twitter","github","email","linkedin","gitlab"]
+platforms = ["twitter","github","email","email","linkedin","gitlab"]
 
 [params.matomoAnalytics]
 siteID = 1
