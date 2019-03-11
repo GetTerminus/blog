@@ -1,8 +1,10 @@
----
-title: "Performance Fastburn & Slowburn"
-date: 2019-03-08T10:24:57-05:00
-draft: true
----
++++
+title = "Performance Fastburn & Slowburn"
+date = "2019-03-08T10:24:57-05:00"
+draft = "false"
+author = "Chue Her"
+email = "chue.her@terminus.com"
++++
 
 # Introduction: Discovering our SLIs & SLOs
 Our system at Terminus has a lot of interconnected and interdependent services. With an ever growing system, how would we know our system is reliable with these compounding factors? How do we define that our service is up? “Up” meaning reliability and availability which are determined by our SLIs & SLOs.
