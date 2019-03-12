@@ -2,7 +2,7 @@ baseurl = "https://blog.terminus.ninja/"
 languageCode = "en"
 title = "Terminus"
 theme = "kiss-master"
-copyright = "&copy; <a href=\"https://github.com/ribice\">Emir Ribic</a> 2017"
+copyright = "&copy; <a href=\"https://terminus.com\">Terminus Software, Inc.</a> 2019"
 disqusShortname = "shortname"
 googleAnalytics = ""
 # Number of posts per page
