@@ -1,4 +1,4 @@
-baseurl = "https://www.example.com"
+baseurl = "https://blog.terminus.ninja/"
 languageCode = "en"
 title = "Terminus"
 theme = "kiss-master"
