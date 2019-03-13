@@ -8,7 +8,6 @@
       {{ end }}
     </div>
     <h2 class="subtitle is-6">
-      {{if not .Date.IsZero }} {{ .Date.Format "January 2, 2006" }} {{ end }} <br>
       {{if .Params.author}} Author: {{.Params.Author}} {{end}} <br>
       {{if .Params.email}} Email: {{.Params.Email}} {{end}} <br>
       {{if .Params.linkedin}} LinkedIn: {{.Params.LinkedIn}} {{end}}

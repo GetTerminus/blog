@@ -1,6 +1,5 @@
 +++
 title = "Performance Fastburn & Slowburn"
-date = "2019-03-08T10:24:57-05:00"
 draft = "false"
 author = "Chue Her"
 email = "chue.her@terminus.com"
