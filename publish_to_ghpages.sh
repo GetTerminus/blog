@@ -25,7 +25,7 @@ echo "Generating site"
 hugo
 
 echo "Create CNAME"
-cd public && touch CNAME && echo 'blog.terminus.ninja' >> CNAME
+cd public && touch CNAME && echo 'forge.terminus.com' >> CNAME
 
 echo "Updating gh-pages branch"
 git add --all && git commit -m "Publishing to gh-pages (publish.sh)" && cd..
