@@ -10,7 +10,7 @@ Paginate = 5
 enableRobotsTXT = true
 
 [params.features]
-disqusOnDemand = true  # Load Disqus comments on click
+disqusOnDemand = false  # Load Disqus comments on click
 
 [params.assets]
 customCSS = ["css/custom.css"]

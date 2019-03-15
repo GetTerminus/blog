@@ -9,7 +9,7 @@
     </div>
     <h2 class="subtitle is-6">
       {{if .Params.author}} Author: {{.Params.Author}} {{end}} <br>
-      {{if .Params.email}} Email: {{.Params.Email}} {{end}} <br>
+      {{if .Params.email}} Email: <a href="mailto:{{.Params.Email}}"> {{.Params.Email}} {{end}}</a><br>
       {{if .Params.linkedin}} LinkedIn: {{.Params.LinkedIn}} {{end}}
       {{if .Params.github}} Github: {{.Params.Github}} {{end}}
       {{if .Params.twitter}} Twitter: {{.Params.Twitter}} {{end}}
@@ -30,5 +30,4 @@
     {{ end}}
   </div>
 </section>
-{{ partial "disqus" . }}
 {{ partial "footer" . }}

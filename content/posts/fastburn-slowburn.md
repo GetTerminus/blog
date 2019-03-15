@@ -3,6 +3,7 @@ title = "Performance Fastburn & Slowburn"
 draft = "false"
 author = "Chue Her"
 email = "chue.her@terminus.com"
+tags = ["slo", "sli", "datadog"]
 +++
 
 # Introduction: Discovering our SLIs & SLOs
@@ -22,22 +23,18 @@ How do I solve this challenge? I needed to use our existing infrastructure (Terr
 For the Fastburn I went with a [time_window](https://docs.datadoghq.com/api/?lang=python#create-a-monitor) of 5 mins (each point in the graph in Datadog reflects an evaluation window of 5m) and compared the current hour minus the previous hour. If the percent change is over 50% an alert will trigger. Example,
 
 ```
-sum(last_5m):((avg:JobStatusV2.../.../.count{method:/api_v2.../.../authorize}
--
-hour_before(avg:JobStatusV2.../.../.count{method:/api_v2.../...//authorize}))
-/
-hour_before(avg:JobStatusV2.../.../.count{method:/api_v2.../.../authorize})) * 100 > 50
+sum(last_5m):((<Get the avg and count for your endpoint> - 
+hour_before(<Get the avg and count for your endpoint>)) /
+hour_before(<Get the avg and count for your endpoint>)) * 100 > 50
 ```
 
 ### Slowburn
 For the Slowburn I went with a time_window of 1 day (each point in the graph in Datadog reflects an evaluation window of 1d) and compared the current week minus the previous week. If the percent change is over 90% an alert will trigger. Example,
 
 ```
-sum(last_1d):((avg:JobStatusV2.../.../.count{method:.../authorize}
--
-week_before(avg:JobStatusV2.../.../.count{method:/api_v2.../.../authorize}))
-/
-week_before(avg:JobStatusV2.../.../.count{method:/api_v2.../.../authorize})) * 100 > 90
+sum(last_1d):((<Get the avg and count for your endpoint> - 
+hour_before(<Get the avg and count for your endpoint>)) /
+hour_before(<Get the avg and count for your endpoint>)) * 100 > 90
 ```
 
 ## Current State
@@ -50,4 +47,3 @@ Now that the mechanism for triggering the alerts are set up, how do we address t
 
 ## Conclusion
 Our journey of SLIs & SLOs is ongoing. It took many months of researching, trials and errors to get to this point. I’m happy with the results my team and I achieved. Overtime the SLIs & SLOs specification will change (e.g., tighten up, or loosen of SLIs & SLOs) depending on the system or users of the service(s). But, we’re in a better place to report to our stakeholders what does it mean to be “Up”.
-
