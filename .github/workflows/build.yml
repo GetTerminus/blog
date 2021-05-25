@@ -16,4 +16,7 @@ jobs:
       - name: Publish GH Pages
         #if: github.ref == 'refs/heads/master'
         working-directory: ${{ github.workspace }}/src/github.com/${{ github.repository }}
-        run: bash -c "publish_to_ghpages.sh;"
+        run: |
+          pwd
+          ls -la
+          publish_to_ghpages.sh
