@@ -3,7 +3,7 @@ name: test
 on: push
 
 jobs:
-  run:
+  gh-pages:
     runs-on: [self-hosted, standard]
     steps:
       - name: Pull
