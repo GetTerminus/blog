@@ -3,11 +3,15 @@ name: test
 on: push
 
 jobs:
-  gh-pages:
+  build:
     runs-on: [self-hosted, standard]
+    container:
+      image: monachus/hugo
     steps:
       - name: Pull
         uses: actions/checkout@v2
+        with:
+          path: ${{ github.workspace }}/src/github.com/${{ github.repository }}
 
       - name: Install SSH Key
         uses: webfactory/ssh-agent@v0.5.2
@@ -16,6 +20,5 @@ jobs:
 
       - name: Publish GH Pages
         #if: github.ref == 'refs/heads/master'
-        uses: docker://monachus/hugo
-        with:
-          args: bash -c "publish_to_ghpages.sh;"
+        working-directory: ${{ github.workspace }}/src/github.com/${{ github.repository }}
+        run: bash -c "publish_to_ghpages.sh;"
