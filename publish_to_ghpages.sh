@@ -28,7 +28,7 @@ echo "Create CNAME"
 cd public && touch CNAME && echo 'forge.terminus.com' >> CNAME
 
 echo "Updating gh-pages branch"
-git add --all && git commit -m "Publishing to gh-pages (publish.sh)" && cd..
+git add --all && git commit -m "Publishing to gh-pages (publish.sh)" && cd ..
 
 echo "Pushing commit"
 git push origin gh-pages --force

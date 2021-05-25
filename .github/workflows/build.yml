@@ -17,6 +17,4 @@ jobs:
         #if: github.ref == 'refs/heads/master'
         working-directory: ${{ github.workspace }}/src/github.com/${{ github.repository }}
         run: |
-          pwd
-          ls -la
           bash /__w/blog/blog/src/github.com/GetTerminus/blog/publish_to_ghpages.sh
