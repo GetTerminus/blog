@@ -5,6 +5,7 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
     container:
       image: monachus/hugo
     steps:
@@ -14,7 +15,6 @@ jobs:
           path: ${{ github.workspace }}/src/github.com/${{ github.repository }}
 
       - name: Publish GH Pages
-        #if: github.ref == 'refs/heads/master'
         working-directory: ${{ github.workspace }}/src/github.com/${{ github.repository }}
         run: |
           bash /__w/blog/blog/src/github.com/GetTerminus/blog/publish_to_ghpages.sh
