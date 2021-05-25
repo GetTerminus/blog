@@ -15,8 +15,6 @@ jobs:
 
       - name: Install SSH Key
         uses: webfactory/ssh-agent@v0.5.2
-        with:
-          ssh-private-key: ${{ secrets.GH_ACTIONS_SSH_PRIVATE_KEY }}
 
       - name: Publish GH Pages
         #if: github.ref == 'refs/heads/master'
