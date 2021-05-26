@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>datadog on Terminus</title>
+    <link>https://forge.terminus.com/tags/datadog/</link>
+    <description>Recent content in datadog on Terminus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://terminus.com&#34;&gt;Terminus Software, Inc.&lt;/a&gt; 2019</copyright><atom:link href="https://forge.terminus.com/tags/datadog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Performance Fastburn &amp; Slowburn</title>
+      <link>https://forge.terminus.com/posts/fastburn-slowburn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://forge.terminus.com/posts/fastburn-slowburn/</guid>
+      <description>Introduction: Discovering our SLIs &amp;amp; SLOs Our system at Terminus has a lot of interconnected and interdependent services. With an ever growing system, how would we know our system is reliable with these compounding factors? How do we define that our service is up? “Up” meaning reliability and availability which are determined by our SLIs &amp;amp; SLOs.
+For a little background on what SLIs &amp;amp; SLOs are please click here and here.</description>
+    </item>
+    
+  </channel>
+</rss>

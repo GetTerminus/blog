@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Terminus</title>
+    <link>https://forge.terminus.com/tags/</link>
+    <description>Recent content in Tags on Terminus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://terminus.com&#34;&gt;Terminus Software, Inc.&lt;/a&gt; 2019</copyright><atom:link href="https://forge.terminus.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>datadog</title>
+      <link>https://forge.terminus.com/tags/datadog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://forge.terminus.com/tags/datadog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sli</title>
+      <link>https://forge.terminus.com/tags/sli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://forge.terminus.com/tags/sli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slo</title>
+      <link>https://forge.terminus.com/tags/slo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://forge.terminus.com/tags/slo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

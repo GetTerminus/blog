@@ -1,0 +1,27 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminus</title>
+    <link>https://forge.terminus.com/</link>
+    <description>Recent content on Terminus</description>
+    <generator>Hugo - gohugo.io</generator>
+    <language>en</language>
+    <contact>ribice@gmail.com</contact>
+    <copyright>&copy; <a href="https://terminus.com">Terminus Software, Inc.</a> 2019</copyright>
+    
+        <atom:link href="https://forge.terminus.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Posts</title>
+      <link>https://forge.terminus.com/posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>Emir Ribic</author>
+      <guid>https://forge.terminus.com/posts/</guid>
+      <description></description>
+      
+      <content></content>
+      
+    </item>
+    
+  </channel>
+</rss>

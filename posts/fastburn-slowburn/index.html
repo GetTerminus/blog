@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Performance Fastburn &amp; Slowburn | Terminus</title>
+
+
+
+<link href="https://forge.terminus.com/index.xml" rel="alternate" type="application/rss+xml" title="Terminus" />
+
+<link rel="stylesheet" href="/css/style.css"/><link rel='stylesheet' href='https://forge.terminus.com/css/custom.css'><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://forge.terminus.com/">
+          <h1 class="title is-4">Terminus</h1>
+        </a>
+      </div>
+      <div class="nav-right">
+        <nav class="nav-item level is-mobile"></nav>
+      </div>
+    </nav>
+
+    <nav class="nav">
+      
+
+      
+    </nav>
+
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="subtitle tags is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/slo">#slo</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/sli">#sli</a>
+  
+  | <a class="subtitle is-6" href="/tags/datadog">#datadog</a>
+  
+
+      
+    </div>
+    <h2 class="subtitle is-6">
+       Author: Chue Her  <br>
+       Email: <a href="mailto:chue.her@terminus.com"> chue.her@terminus.com </a><br>
+      
+      
+      
+    </h2>
+    <br>
+    <h1 class="title">Performance Fastburn &amp; Slowburn</h1>
+    
+    <div class="content">
+      <h1 id="introduction-discovering-our-slis--slos">Introduction: Discovering our SLIs &amp; SLOs</h1>
+<p>Our system at Terminus has a lot of interconnected and interdependent services. With an ever growing system, how would we know our system is reliable with these compounding factors? How do we define that our service is up? “Up” meaning reliability and availability which are determined by our SLIs &amp; SLOs.</p>
+<p>For a little background on what SLIs &amp; SLOs are please click <a href="https://landing.google.com/sre/books/">here</a> and <a href="https://landing.google.com/sre/sre-book/chapters/service-level-objectives/">here</a>. After researching and reading the contents I finally had enough information and management support to implement this new paradigm with our new service.</p>
+<h2 id="the-challenge">The Challenge</h2>
+<p>For our new service we addressed other SLIs &amp; SLOs requirements. But there were two questions asked by my manager which were difficult to address. The questions were, “How do we alert within the first 5 mins of this new service if we’re going to burn through our error budget for the month? Also, how do we alert within the day if we’re going to burn through our error budget for the month?”</p>
+<p>Great questions! Which, I was struggling to answer. As I fished for clues ultimately he wanted a performance Fastburn alert and a performance Slowburn alert to notify the team when the percent change passes a certain number.</p>
+<h3 id="brainstorming">Brainstorming</h3>
+<p>How do I solve this challenge? I needed to use our existing infrastructure (Terraform, Datadog, and Pager Duty) to build this alert. Our service is written in Go, which has all the appropriate tags being passed to StatsD which feeds into Datadog. I needed to implement the percent change using the query in Datadog. After researching many Datadog articles (Arithmetic, Timeshift, Count, etc.) I found the article which <a href="https://docs.datadoghq.com/graphing/faq/how-can-i-graph-the-percentage-change-between-an-earlier-value-and-a-current-value/">solved</a> these questions.</p>
+<h3 id="fastburn">Fastburn</h3>
+<p>For the Fastburn I went with a <a href="https://docs.datadoghq.com/api/?lang=python#create-a-monitor">time_window</a> of 5 mins (each point in the graph in Datadog reflects an evaluation window of 5m) and compared the current hour minus the previous hour. If the percent change is over 50% an alert will trigger. Example,</p>
+<pre><code>sum(last_5m):((&lt;Get the avg and count for your endpoint&gt; - 
+hour_before(&lt;Get the avg and count for your endpoint&gt;)) /
+hour_before(&lt;Get the avg and count for your endpoint&gt;)) * 100 &gt; 50
+</code></pre><h3 id="slowburn">Slowburn</h3>
+<p>For the Slowburn I went with a time_window of 1 day (each point in the graph in Datadog reflects an evaluation window of 1d) and compared the current week minus the previous week. If the percent change is over 90% an alert will trigger. Example,</p>
+<pre><code>sum(last_1d):((&lt;Get the avg and count for your endpoint&gt; - 
+hour_before(&lt;Get the avg and count for your endpoint&gt;)) /
+hour_before(&lt;Get the avg and count for your endpoint&gt;)) * 100 &gt; 90
+</code></pre><h2 id="current-state">Current State</h2>
+<p>Now that the mechanism for triggering the alerts are set up, how do we address the error budget? Specifically, is there a mechanism which indicates that we’re reaching the limits of our error budget? Currently, not at this time. We put specifications around these performance Fastburn and Slowburn alerts. See <strong>Table 1</strong> below. Datadog has a good Monitor Summary widget which shows the alerts current state (triggered or not triggered). Additionally, Datadog does have an Uptime widget as well specific to SLIs &amp; SLOs. However, it is still in beta. But, it does show very good promise.</p>
+<h4 id="table-1"><strong>Table 1</strong></h4>
+<table>
+<thead>
+<tr>
+<th>SLI</th>
+<th>SLO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(Fastburn perf) Performance of endpoint summed within 5 mins as a rate of change <code>count of “authorize” current http_requests as avg minus by count of hour_before “authorize” http_request as avg over hour_before “authorize” http_requests as avg * 100 &gt; 0.5</code></td>
+<td>99.99% success in previous 5 mins. Example, Sum the data points within 5 mins between the current endpoint minus the hour_before endpoint over the hour_before endpoint multiply by 100. If the rate of change is &gt; 50% trigger an alert. And, if 3 alerts fired within 5 mins we’ll need to investigate.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="conclusion">Conclusion</h2>
+<p>Our journey of SLIs &amp; SLOs is ongoing. It took many months of researching, trials and errors to get to this point. I’m happy with the results my team and I achieved. Overtime the SLIs &amp; SLOs specification will change (e.g., tighten up, or loosen of SLIs &amp; SLOs) depending on the system or users of the service(s). But, we’re in a better place to report to our stakeholders what does it mean to be “Up”.</p>
+
+      
+      <div class="related">
+</div>
+      
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://terminus.com">Terminus Software, Inc.</a> 2019</p>
+    
+      <p>Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/ribice/kiss">Kiss</a>.</p>
+    
+  </div>
+</section>
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="\/\/matomo.example.com\/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript>
+  <img src="//matomo.example.com/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
+</noscript>
+
+<script>
+    (function(f, a, t, h, o, m){
+        a[h]=a[h]||function(){
+            (a[h].q=a[h].q||[]).push(arguments)
+        };
+        o=f.createElement('script'),
+        m=f.getElementsByTagName('script')[0];
+        o.async=1; o.src=t; o.id='fathom-script';
+        m.parentNode.insertBefore(o,m)
+    })(document, window, '\/\/fathom.example.com\/tracker.js', 'fathom');
+    fathom('trackPageview');
+</script>
+</body>
+</html>
+
